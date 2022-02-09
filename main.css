@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --main-font: 'Montserrat', sans-serif;
+    font-size: 62.5%; /*  1rem = 10px */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--main-font) !important;
+}
+
+h2 {
+    padding-bottom: 7rem;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #6A2620;
+}
+
+.row {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*---------------------------------------------------------------*/
+/*----------------------------HEADER-----------------------------*/
+/*---------------------------------------------------------------*/
+
+.imagem-header {
+    padding: 0 !important;
+    height: 100vh !important;
+    width: 100;
+    color: white;
+    background-image: url('imagens/header_img.png');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.text-header {
+    position: absolute;
+    max-width: 450px;
+    top: 160px;
+    margin: 0 100px auto;
+}
+
+.subtitle {
+    color: black;
+    font-size: 1.8rem !important;
+    font-weight: 500 !important;
+    line-height: 2.5rem;
+}
+
+.main-title {
+    color: #6A2620 !important;
+    font-size: 5.5rem;
+    font-weight: 600;
+}
+
+.cta {
+    width: 200px;
+    height: 50px;
+    background-color: #6A2620;
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+    transition: ease-in-out .3s;
+    border: none;
+}
+
+.cta:hover {
+    background-color: #ac291d;
+    top: 99.8%;
+}
+
+/*---------------------------------------------------------------*/
+/*----------------------------NAVBAR-----------------------------*/
+
+
+.navbar {
+    padding: 10px !important;
+    font-size: 1.4rem;
+    line-height: 4rem;
+    z-index: 20;
+    transition: .5;
+}
+
+.navscroll {
+    background-color: white !important;
+}
+
+.nav-link {
+    position: relative;
+    padding: 20px !important;
+    color: #6a2620 !important;
+    font-weight: 600;
+    transition: ease-in-out .5s;
+}
+
+.nav-link:hover {
+    color: #6A2620 !important;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    background-color: #6A2620;
+    height: 2px;
+    width: 0;
+    left: 0;
+    border-radius: 10px;
+    top: 5.5rem;
+    transition: ease-in-out .5s;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+.navbar-brand {
+    width: 100px;
+}
+
+.brand {
+    width: 90%;
+    height: auto;
+    margin-left: 10px;
+}
+
+.navbar-scrolled {
+    background-color: #fff !important;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.185);
+}
+
+.navbar-scrolled .brand {
+    width: 70%;
+}
+
+/*---------------------HAMBURGER MENU BUTTON---------------------*/
+
+.navbar-toggler {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+
+/*Fazer as configurações em active e focus desaparecerem*/
+.navbar-toggler, 
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #6A2620;;
+    border-radius: 10px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0;
+    transition: .5s;
+}
+
+.middle-bar:active {
+    left: -20px;
+}
+
+/*Quando a nav é clicada*/
+
+.navbar-toggler .top-bar {
+    margin-top: 0;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    left: -20px;
+}
+
+.navbar-toggler .bottom-bar {
+    margin-top: 0;
+    transform: rotate(-135deg);
+}
+
+
+/*Estado quando a navbar está 'collapsed'*/
+
+.navbar-toggler.collapsed .top-bar{
+    margin-top: -20px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar{
+    margin-top: 0px;
+    left: 0;
+    opacity: 1;
+    filter: opacity(100);
+}
+
+.navbar-toggler.collapsed .bottom-bar{
+    margin-top: 20px;
+    transform: rotate(0deg);
+}
+
+/*---------------------------FIM NAVBAR--------------------------*/
+/*---------------------------------------------------------------*/
+
+/*---------------------------------------------------------------*/
+/*--------------------------FIM HEADER---------------------------*/
+/*---------------------------------------------------------------*/
+
+
+
+
+/*---------------------------------------------------------------*/
+/*-----------------------------MAIN------------------------------*/
+/*---------------------------------------------------------------*/
+
+section {
+    padding: 12rem 0;
+}
+
+.section-color {
+    background-color: rgba(224, 205, 204, 0.25);
+}
+
+.card-quem-somos {
+    border: transparent !important;
+    width: 270px;
+}
+
+.card1-img-top {
+    max-width: 120px;
+    border-radius: 50%;
+}
+
+.card {
+    width: 270px;
+}
+
+.card2-img-top {
+    width: 100%;
+    margin: 0 !important; 
+}
+
+.card-title {
+    font-size: 2.6rem;
+    line-height: 5.2rem;
+    font-weight: 700;
+    color: #6A2620;
+}
+
+.card-text {
+    font-size: 1.6rem;
+}
+
+.preco {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.card .cta {
+    margin-bottom: 10px;
+}
+
+/*---------------------------------------------------------------*/
+/*----------------------------SWIPER-----------------------------*/
+.nossosClientes {
+    position: relative;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+  
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    background-color: #fff;
+    color: #999;
+    margin: 0 20px;
+    width: 280px;
+    height: 400px;
+    box-shadow: 1px 1px 5px rgba(46, 44, 44, 0.274);
+    filter: blur(3px);
+    opacity: 0.8;
+}
+
+.quote {
+    position: absolute;
+    margin-left: 10px;
+}
+
+.profile {
+    width: 80px !important;
+    border-radius: 50%;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: #822424;
+    margin-bottom: 0;
+}
+
+.subtitle {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.card-text {
+    font-size: 1.5rem;
+}
+
+.card-brand {
+    width: 60px !important;
+}
+
+/*Card em destaque*/
+.swiper-slide-active {
+    filter: blur(0) !important;
+    opacity: 1;
+    color: black;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+    background-image: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #6A2620 ;
+}
+
+.end-text {
+    font-size: 4.5rem;
+}

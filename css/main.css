@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --fonte-padrão: 'Roboto', sans-serif;;
+    --fonte-android: 'Roboto Slab', serif;
+}
+
+html {
+    font-family: var(--fonte-padrão);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--fonte-android);
+}
+
+.nav-link:hover {
+    background-color: white;
+    color: black !important;
+}
+
+.navbar {
+    padding: 10px !important;
+}
+
+.nav-link {
+    padding: 20px 0 20px 20px !important;
+}
+
+.navbar-brand {
+    max-width: 25%;
+}
+
+.brand {
+    width: 100%;
+}
+
+.imagem-header {
+    padding: 0 !important;
+    height: 100vh !important;
+    width: 100vw;
+    color: white;
+    background-image: url('../imagens/header.png') !important;
+    background-color: black;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.fundo {
+    width: 100vw;
+    height: 100%;
+    opacity: 0.9;
+    z-index: 2;
+}
+
+.section {
+    width: 100vw;
+    padding: 40px 0 40px 0 !important;
+}
+
+.row {
+    margin: auto;
+    width: 90vw;
+}
+
+h1 {
+    position: absolute;
+    bottom: 55%;
+    left: 6%;
+    width: 90%;
+    padding: 10px;
+    font-weight: 300 !important;
+    font-size: calc(1.575rem + 1vw) !important;
+    line-height: 1.0 !important;
+    z-index: 3;
+}
+
+.tecnologia {
+    font-size: calc(1.575rem + 7.5vw) !important;
+    font-weight: 400;
+}
+
+.p-h1 {
+    position: absolute;
+    top: 46%;
+    left: 6%;
+    width: 85%;
+    padding: 10px;
+    font-weight: 300 !important;
+    z-index: 3;
+    line-height: 1.6 !important;
+}
+
+h2 {
+    font-weight: 400 !important;
+}
+
+iframe {
+    margin-bottom: 50px;
+}
+
+.green-box {
+    color: white;
+}
+
+.aside {
+    background-color: #a8ff65;
+    padding: 40px 0 40px 0 !important;
+}
+
+aside ul li {
+    color: black;
+}
+
+.ending {
+    font-family: var(--fonte-android);
+}
+
+.footer {
+    color: white;
+}
