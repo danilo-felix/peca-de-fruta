@@ -18,7 +18,7 @@ h2 {
 }
 
 .row {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -361,6 +361,21 @@ section {
     color: #6A2620 ;
 }
 
+/*---------------------------------------------------------------*/
+/*--------------------------FIM SWIPER----------------------------*/
+
+
+.cta-final {
+    margin-top: 60px;
+}
+
 .end-text {
     font-size: 4.5rem;
+    line-height: 6.5rem;
+    color: #6A2620
+}
+
+.footer {
+    height: 200px;
+    background-color: #6A2620;
 }
