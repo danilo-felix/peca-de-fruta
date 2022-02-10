@@ -8,12 +8,13 @@
 
 body {
     font-family: var(--main-font) !important;
+    overflow-x: hidden;
 }
 
 h2 {
     padding-bottom: 7rem;
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 700;
     color: #6A2620;
 }
 
@@ -39,7 +40,7 @@ h2 {
 
 .text-header {
     position: absolute;
-    max-width: 450px;
+    max-width: 500px;
     top: 160px;
     margin: 0 100px auto;
 }
@@ -54,7 +55,7 @@ h2 {
 .main-title {
     color: #6A2620 !important;
     font-size: 5.5rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .cta {
@@ -364,15 +365,26 @@ section {
 /*---------------------------------------------------------------*/
 /*--------------------------FIM SWIPER----------------------------*/
 
+.fim {
+    position: relative;
+}
 
 .cta-final {
     margin-top: 60px;
 }
 
 .end-text {
-    font-size: 4.5rem;
+    font-size: 4rem;
     line-height: 6.5rem;
+    font-weight: 600;
     color: #6A2620
+}
+
+.cesto-fim {
+    width: 60%;
+    position: absolute;
+    top: 60px;
+    left: 550px;
 }
 
 .footer {
