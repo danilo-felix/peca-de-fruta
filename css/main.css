@@ -431,6 +431,10 @@ section {
         margin: 20px 20px auto;
     }
 
+    .div-cta {
+        text-align: center !important;
+    }
+
     .card-quem-somos,
     .card {
         margin-bottom: 60px;
