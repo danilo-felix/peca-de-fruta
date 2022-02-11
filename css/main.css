@@ -86,18 +86,6 @@ h2 {
     transition: ease-in-out .3;
 }
 
-.navscroll {
-    background-color: white !important;
-    box-shadow: 1px 1px 5px rgba(110, 105, 105, 0.322);
-    line-height: 2rem;
-    font-size: 1.3rem;
-    transition: ease-in-out .3s;
-}
-
-.navscroll .brand {
-    width: 60%;
-}
-
 .nav-link {
     position: relative;
     padding: 20px !important;
@@ -137,13 +125,20 @@ h2 {
     transition: .5s;
 }
 
-.navbar-scrolled {
-    background-color: #fff !important;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.185);
+.navscroll {
+    background-color: white !important;
+    box-shadow: 1px 1px 5px rgba(110, 105, 105, 0.322);
+    line-height: 2rem;
+    font-size: 1.3rem;
+    transition: ease-in-out .3s;
 }
 
-.navbar-scrolled .brand {
-    width: 70%;
+.navscroll .brand {
+    width: 60%;
+}
+
+.navscroll .nav-link::after {
+    top: 4.5rem;
 }
 
 /*---------------------HAMBURGER MENU BUTTON---------------------*/
@@ -390,13 +385,80 @@ section {
 }
 
 .cesto-fim {
-    width: 60%;
-    position: absolute;
-    top: 60px;
-    left: 550px;
+    width: 500px;
+    height: auto;
 }
 
+/*---------------------------------------------------------------*/
+/*---------------------------FIM MAIN----------------------------*/
+/*---------------------------------------------------------------*/
+
+
+
+
+/*---------------------------------------------------------------*/
+/*----------------------------FOOTER-----------------------------*/
+/*---------------------------------------------------------------*/
+
 .footer {
-    height: 200px;
+    min-height: 250px;
+    font-size: 1.2rem;
+    color: white;
     background-color: #6A2620;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.logo-footer {
+    width: 100px;
+    height: auto;
+}
+
+.footer li {
+    line-height: 3rem;
+}
+
+
+@media (max-width:576px) {
+    .text-header {
+        margin: 20px 20px auto;
+    }
+
+    .card-quem-somos,
+    .card {
+        margin-bottom: 60px;
+    }
+
+    .card-quem-somos:last-child,
+    .card:last-child {
+        margin-bottom: 0px;
+    }
+
+    .swiper {
+        padding-bottom: 0px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        visibility: hidden;
+    }
+
+    .col-6 {
+        width: 100% !important;
+    }
+
+    .footer .row {
+        flex-direction: column;
+    }
+
+    .footer .row .col-4{
+        margin: auto;
+    }
 }
