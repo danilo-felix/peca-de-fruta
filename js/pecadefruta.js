@@ -17,3 +17,16 @@ let swiper = new Swiper(".mySwiper", {
   });
 
 
+  window.onscroll = function() {scrollFunction()};
+
+  let header = document.querySelector('.navbar')
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      header.classList.add("navscroll")
+    } else {
+      header.classList.remove("navscroll")
+    }
+  }
+
+

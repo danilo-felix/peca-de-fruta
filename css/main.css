@@ -83,11 +83,19 @@ h2 {
     font-size: 1.4rem;
     line-height: 4rem;
     z-index: 20;
-    transition: .5;
+    transition: ease-in-out .3;
 }
 
 .navscroll {
     background-color: white !important;
+    box-shadow: 1px 1px 5px rgba(110, 105, 105, 0.322);
+    line-height: 2rem;
+    font-size: 1.3rem;
+    transition: ease-in-out .3s;
+}
+
+.navscroll .brand {
+    width: 60%;
 }
 
 .nav-link {
@@ -126,6 +134,7 @@ h2 {
     width: 90%;
     height: auto;
     margin-left: 10px;
+    transition: .5s;
 }
 
 .navbar-scrolled {
