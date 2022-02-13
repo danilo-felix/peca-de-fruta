@@ -32,7 +32,7 @@ h2 {
     height: 100vh !important;
     color: white;
     background-image: url('../imagens/new-header-img.jpg') !important;
-    background-position: center center;
+    background-position: 40% center;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -57,6 +57,7 @@ h2 {
     font-size: 1.7rem !important;
     font-weight: 500 !important;
     line-height: 2.8rem;
+    margin: 25px 0 50px 0 !important;
 }
 
 .main-title {
