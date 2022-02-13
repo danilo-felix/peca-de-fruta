@@ -31,11 +31,20 @@ h2 {
     padding: 0 !important;
     height: 100vh !important;
     color: white;
-    background-image: url('../imagens/header_img.png') !important;
+    background-image: url('../imagens/new-header-img.jpg') !important;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+}
+
+.dark-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.486);
 }
 
 .text-header {
@@ -46,16 +55,17 @@ h2 {
 }
 
 .subtitle {
-    color: black;
+    color: white;
     font-size: 1.8rem !important;
-    font-weight: 500 !important;
+    font-weight: 600 !important;
     line-height: 2.5rem;
 }
 
 .main-title {
-    color: #6A2620 !important;
+    color: white !important;
     font-size: 5.5rem;
-    font-weight: 700;
+    line-height: 7.5rem;
+    font-weight: 800;
 }
 
 .cta {
@@ -89,25 +99,25 @@ h2 {
 .nav-link {
     position: relative;
     padding: 20px !important;
-    color: #6a2620 !important;
+    color: white !important;
     font-weight: 600;
     transition: ease-in-out .5s;
 }
 
 .nav-link:hover {
-    color: #6A2620 !important;
+    color: white !important;
 }
 
 .nav-link::after {
     content: "";
     position: absolute;
-    background-color: #6A2620;
+    background-color: white;
     height: 2px;
     width: 0;
     left: 0;
     border-radius: 10px;
     top: 5.5rem;
-    transition: ease-in-out .5s;
+    transition: all ease-in-out .5s;
 }
 
 .nav-link:hover:after {
@@ -122,15 +132,15 @@ h2 {
     width: 90%;
     height: auto;
     margin-left: 10px;
-    transition: .5s;
+    transition: .3s;
 }
 
 .navscroll {
-    background-color: white !important;
+    background-color: #6A2620 !important;
     box-shadow: 1px 1px 5px rgba(110, 105, 105, 0.322);
     line-height: 2rem;
     font-size: 1.3rem;
-    transition: ease-in-out .3s;
+    transition: all ease-in-out .3s;
 }
 
 .navscroll .brand {
@@ -171,7 +181,7 @@ h2 {
     position: absolute;
     height: 3px;
     width: 100%;
-    background-color: #6A2620;;
+    background-color: white;
     border-radius: 10px;
     opacity: 1;
     left: 0;
@@ -429,6 +439,10 @@ section {
 @media (max-width:576px) {
     .text-header {
         margin: 20px 20px auto;
+    }
+
+    .nav-link::after {
+        visibility: hidden;
     }
 
     .div-cta {
