@@ -282,8 +282,9 @@ section {
     color: #6A2620;
 }
 
-.card-text {
-    font-size: 1.6rem;
+.card-quem-somos-text {
+    font-size: 1.7rem !important;
+    line-height: 2.8rem;
 }
 
 .preco {
@@ -344,7 +345,7 @@ section {
     margin-bottom: 0;
 }
 
-.subtitle {
+.subtitle-card {
     font-weight: bold;
     font-size: 1.4rem;
     margin: 0;
@@ -395,7 +396,6 @@ section {
 
 .cesto-fim {
     width: 500px;
-    margin-top: 60px;
     height: auto;
 }
 
@@ -470,6 +470,10 @@ section {
 
     .col-6 {
         width: 100% !important;
+    }
+
+    .cesto-fim {
+        margin-top: 60px;
     }
 
     .footer .row {
