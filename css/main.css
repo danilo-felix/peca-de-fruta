@@ -388,13 +388,14 @@ section {
 
 .end-text {
     font-size: 4rem;
-    line-height: 6.5rem;
+    line-height: 5.5rem;
     font-weight: 600;
     color: #6A2620
 }
 
 .cesto-fim {
     width: 500px;
+    margin-top: 60px;
     height: auto;
 }
 
