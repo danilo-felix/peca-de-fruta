@@ -457,17 +457,14 @@ address span {
         text-align: center !important;
     }
 
-    .card-quem-somos,
     .card {
         margin-bottom: 60px;
     }
 
-    .card-quem-somos:last-child,
     .card:last-child {
         margin-top: 0 !important;
     }
 
-    .card-quem-somos:last-child,
     .card:last-child {
         margin-bottom: 0px;
     }
@@ -492,6 +489,21 @@ address span {
     .footer .row .col-4{
         margin: auto;
     }
+}
+
+@media (max-width:616px) {
+    .card-quem-somos {
+        margin-bottom: 60px;
+    }
+
+    .card-quem-somos:last-child {
+        margin-top: 0 !important;
+    }
+
+    .card-quem-somos:last-child {
+        margin-bottom: 0px;
+    }
+
 }
 
 @media (max-width:916px) {
