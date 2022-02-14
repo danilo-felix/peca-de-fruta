@@ -440,9 +440,17 @@ address span {
 }
 
 .footer li {
-    line-height: 3rem;
+    line-height: 5rem;
 }
 
+.icon {
+    color: white;
+    height: 15px;
+}
+
+.space {
+    margin-top: 20px !important;
+}
 
 @media (max-width:577px) {
     .text-header {
