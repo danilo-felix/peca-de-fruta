@@ -21,6 +21,7 @@ let swiper = new Swiper(".mySwiper", {
 
   let header = document.querySelector('.navbar')
 
+
   function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
       header.classList.add("navscroll")
@@ -29,4 +30,4 @@ let swiper = new Swiper(".mySwiper", {
     }
   }
 
-
+  

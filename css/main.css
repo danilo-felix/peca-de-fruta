@@ -525,13 +525,19 @@ address span {
         text-align: center;
     }
 
+    .footer ul {
+        padding-left: 0 !important;
+    }
+
 }
+
 
 @media (max-width:841px) {
     .card:last-child {
         margin-top: 60px;
     }
 }
+
 
 @media (max-width:1031px) {
     .cta-final {
