@@ -529,6 +529,14 @@ address span {
         padding-left: 0 !important;
     }
 
+    .footer li {
+        line-height: 4rem !important;
+    }
+
+    .footer li:last-child {
+        margin-bottom: 20px;
+    }
+
 }
 
 
