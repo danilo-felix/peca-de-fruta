@@ -12,7 +12,7 @@ body {
 }
 
 h2 {
-    padding-bottom: 7rem;
+    padding-bottom: 4rem;
     font-size: 3rem;
     font-weight: 700;
     color: #6A2620;
@@ -79,8 +79,8 @@ h2 {
 }
 
 .cta:hover {
-    background-color: #ac291d;
-    top: 99.8%;
+    background-color: #f51803;
+    box-shadow: 1px 1px 10px rgb(143, 143, 143);
 }
 
 /*---------------------------------------------------------------*/
@@ -258,7 +258,7 @@ section {
 
 .card-quem-somos {
     border: transparent !important;
-    width: 270px;
+    width: 300px;
 }
 
 .card1-img-top {
@@ -267,7 +267,7 @@ section {
 }
 
 .card {
-    width: 270px;
+    width: 275px;
 }
 
 .card2-img-top {
@@ -472,15 +472,45 @@ section {
         width: 100% !important;
     }
 
-    .cesto-fim {
-        margin-top: 60px;
-    }
-
     .footer .row {
         flex-direction: column;
     }
 
     .footer .row .col-4{
         margin: auto;
+    }
+}
+
+@media (max-width:916px) {
+    .card-quem-somos:last-child {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width:841px) {
+    .card:last-child {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width:1031px) {
+    .cta-final {
+        margin: auto;
+        margin-top: 60px;
+    }
+
+
+    .col-6 {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .div-cta {
+        text-align: center;
+    }
+
+    .cesto-fim {
+        margin: auto;
+        margin-top: 60px;
     }
 }
