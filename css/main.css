@@ -444,7 +444,7 @@ address span {
 }
 
 
-@media (max-width:576px) {
+@media (max-width:577px) {
     .text-header {
         margin: 20px 20px auto;
     }
@@ -460,6 +460,11 @@ address span {
     .card-quem-somos,
     .card {
         margin-bottom: 60px;
+    }
+
+    .card-quem-somos:last-child,
+    .card:last-child {
+        margin-top: 0 !important;
     }
 
     .card-quem-somos:last-child,
