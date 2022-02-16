@@ -14,7 +14,7 @@
 
 
 </head>
-<body>
+<body onload="init()">
     <header>
         <nav class="navbar navbar-expand-md bg-transparent navbar-dark fixed-top" id="navbar">
             <div class="container-fluid">
@@ -56,7 +56,7 @@
             <div class="text-header">
               <h1 class="main-title">Receba as melhores frutas no teu trabalho</h1>
               <p class="subtitle">Subscreva nosso serviço de entrega de fruta e tenha um ambiente de trabalho mais saudável e produtivo.</p>
-              <div class="div-cta"><input type="button" value="QUERO COMPRAR" class="cta"></div>
+              <div class="div-cta"><input type="button" value="QUERO COMPRAR" class="cta cta1"></div>
             </div>
 
           </div>
@@ -107,7 +107,7 @@
               <p class="card-text">Equipas de até 15 pessoas</p>
               <p class="card-text">10 Bananas; 08 Maçãs; e 08 Laranjas.</p>
               <p class="linha-preco"><span class="preco">10€</span> por semana</p>
-              <input type="button" value="QUERO COMPRAR" class="cta">
+              <input type="button" value="QUERO COMPRAR" class="cta cta-cesto">
             </div>
           </div>
 
@@ -118,7 +118,7 @@
               <p class="card-text">Equipas de até 50 pessoas</p>
               <p class="card-text">30 Bananas; 25 Maçãs; 25 Laranjas; e 10 Pêras</p>
               <p class="linha-preco"><span class="preco">30€</span> por semana</p>
-              <input type="button" value="QUERO COMPRAR" class="cta">
+              <input type="button" value="QUERO COMPRAR" class="cta cta-cesto">
             </div>
           </div>
           
@@ -129,7 +129,7 @@
               <p class="card-text">Equipas de até 100 pessoas</p>
               <p class="card-text">70 Bananas; 50 Maçãs; 50 Laranjas; e 25 Pêras</p>
               <p class="linha-preco"><span class="preco">50€</span> por semana</p>
-              <input type="button" value="QUERO COMPRAR" class="cta">
+              <input type="button" value="QUERO COMPRAR" class="cta cta-cesto">
             </div>
           </div>
         </div>
@@ -217,11 +217,63 @@
       <div class="row final-row">
         <div class="col-6 final-text align-middle">
           <h3 class="end-text">Subscreva já e tenha a qualidade da Peça de Fruta na tua empresa</h3>
-          <div class="div-cta"><input type="button" value="QUERO COMPRAR" class="cta cta-final"></div>
+          <div class="div-cta"><input type="button" value="QUERO COMPRAR" class="cta cta-final cta1"></div>
         </div>
         <img src="imagens/cesta-fim.png" alt="" class="col-6 cesto-fim">
       </div>
     </section>
+
+    <div class="modal-class">
+      <form class="formulario">
+        <span class="close" onclick="fechaModal()">X</span>
+
+        <div class="formulario-group">
+            <input type="text" name="Empresa" class="formulario-control empresa" id="empresa" placeholder="Empresa" tabindex="1" required>
+      
+        </div>
+
+        <div class="formulario-group">
+            <input type="text" name="Responsável" class="formulario-control" id="responsavel" placeholder="Responsável" tabindex="2" required>
+        </div>
+
+        <div class="formulario-group formtel-box d-flex">
+          <div class="col-6">
+              <input type="tel" name="Telefone" class="formulario-tel" id="telefone" placeholder="999 999 999" tabindex="3" required>
+          </div>
+
+          <div class="formulario-tel">
+              <input type="tel" name="Telemóvel" class="formulario-tel" id="telefone" placeholder="999 999 999" tabindex="4" required>
+          </div>
+        </div>
+
+        <div class="formulario-group">
+            <input type="text" name="E-mail" class="formulario-control" id="email" placeholder="nome@empresa.pt" tabindex="5" required>
+        </div>
+        <div class="formulario-group">
+            <select class="formulario-select formulario-control" id="quantos-cestos" tabindex="6">
+              <option selected>Escolha o cesto</option>
+              <option value="1" class="option-cesto">Cesto S (10 bananas; 8 maçãs; e 8 laranjas)</option>
+              <option value="2" class="option-cesto">Cesto M (30 bananas; 25 maçãs; 25 laranjas; e 10 pêras)</option>
+              <option value="3" class="option-cesto">Cesto L (70 bananas; 50 maçãs; 50 laranjas; e 25 pêras)</option>
+            </select>
+          </div>
+        <div class="formulario-group formulario-msg">
+            <input type="text" name="Mensagem" class="formulario-control mensagem" id="mensagem" placeholder="Mensagem (opcional)" tabindex="7" required>
+        </div>
+        <div class="formulario-check">
+            <input type="checkbox" class="condicoes" name="termos-e-condicoes" id="condicoes" required>
+            <label for="condicoes">Declaro que li e concordo com os Termos e Condições para a conclusão desta operação.</label>
+        </div>
+        <div class="formulario-check">
+            <input type="checkbox" class="condicoes" name="termos-e-condicoes" id="condicoes">
+            <label for="condicoes">Declaro que autorizo a utilização dos meus dados pessoais por parte da Peça de Fruta para fins comerciais e envio de informações de marketing.</label>
+        </div>
+        <div class="form-btn">
+            <input type="button" value="SUBSCREVER" class="modal-cta cta">
+        </div>
+      
+        </form>
+    </div>
 
     </main>
 

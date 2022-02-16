@@ -482,7 +482,107 @@ address span {
 /*-----------------------------FORM------------------------------*/
 /*---------------------------------------------------------------*/
 
+.modal-class {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    overflow-x: hidden;
+    transition: all ease-in-out .5s;
+}
 
+.modal-class .active {
+    display: flex;
+}
+
+.close {
+    position: absolute;
+    font-size: 2rem;
+    right: 30px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.formulario {
+    position: absolute;
+    top: 0;
+    left: 48.4%;
+    width: 704px;
+    height: 100vh;
+    background-color: #E0CDCC;
+    transition: all ease-in-out .3s;
+}
+
+.formulario-group {
+    text-align: center !important;
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+}
+
+.formulario-msg {
+    margin-bottom: 0;
+}
+
+.formulario-control {
+    width: 450px;
+    height: 30px;
+}
+
+.formulario-select {
+    width: 450px;
+    height: 32px;
+}
+
+.empresa {
+    margin-top: 80px;
+}
+
+.formtel-box {
+    margin-inline: auto;
+    width: 450px;
+}
+
+.formulario-tel {
+    width: 210px;
+}
+
+.mensagem {
+    height: 70px;
+    margin-bottom: 10px !important;
+}
+
+.modal-cta {
+    margin: auto;
+    margin-top: 15px;
+    width: 160px;
+    height: 45px;
+    background-color: #ac291d;
+    color: white;
+}
+
+.formulario-check {
+    margin: auto;
+    text-align: left;
+    max-width: 450px;
+}
+
+.formulario-check label {
+    color: #721E16;
+}
+
+.form-btn {
+    text-align: center;
+}
+
+label {
+    display: inline;
+}
 
 /*---------------------------------------------------------------*/
 /*---------------------------FIM FORM----------------------------*/

@@ -41,3 +41,47 @@ const btnMenu = document.querySelector('.navbar-toggler')
 navLinks.forEach((l) => {
     l.addEventListener('click', () => { menuToggle.classList.remove("show"); btnMenu.classList.add('collapsed'); })
 })
+
+
+  //Funções para controle do modal
+  let btQueroComprar, modal;
+
+  function init() {
+    btQueroComprar = document.querySelectorAll('.cta1');
+    modal = document.querySelector('.modal-class');
+    btCesto = document.querySelectorAll('.cta-cesto');
+    console.log(btCesto)
+
+    //eventos
+    for (let i=0; i<btQueroComprar.length;i++) {
+      btQueroComprar[i].addEventListener('click', abreModal);
+    }
+
+    for (let i=0; i<btCesto.length;i++) {
+      btCesto[i].addEventListener('click', abreModalSelect);
+    }
+    
+  }
+
+  function abreModal() {
+    modal.style.display = 'flex';
+    let modalDentro = modal.querySelector('.form');
+  }
+
+  function abreModalSelect() {
+    modal.style.display = 'flex';
+    let modalDentro = modal.querySelector('.form');
+  }
+
+  function fechaModal() {
+    modal.style.display = 'none';
+
+    let modalDentro = modal.querySelector('.form');
+    //modalDentro.classList.remove("active");
+  }
+
+  window.onclick = function(event) {
+    if (event.target === modal) {
+      fechaModal()
+    }
+  }
