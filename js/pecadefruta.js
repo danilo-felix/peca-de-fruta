@@ -17,10 +17,12 @@ let swiper = new Swiper(".mySwiper", {
   });
 
 
+
+
+  //Função para alterar a navbar com o scroll
   window.onscroll = function() {scrollFunction()};
 
   let header = document.querySelector('.navbar')
-
 
   function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -30,4 +32,12 @@ let swiper = new Swiper(".mySwiper", {
     }
   }
 
-  
+
+
+  //Função para fechar menu hamb ao clicar
+const navLinks = document.querySelectorAll('.nav-item')
+const menuToggle = document.getElementById('navbarsExampleDefault')
+const bsCollapse = new bootstrap.Collapse(menuToggle)
+navLinks.forEach((l) => {
+    l.addEventListener('click', () => { bsCollapse.toggle() })
+})

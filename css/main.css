@@ -151,7 +151,6 @@ h2 {
     box-shadow: 1px 1px 5px rgba(110, 105, 105, 0.322);
     line-height: 2rem;
     font-size: 1.3rem;
-    transition: all ease-in-out .3s;
 }
 
 .navscroll .nav-background {
