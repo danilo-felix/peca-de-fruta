@@ -37,7 +37,7 @@ let swiper = new Swiper(".mySwiper", {
   //Função para fechar menu hamb ao clicar
 const navLinks = document.querySelectorAll('.nav-item')
 const menuToggle = document.getElementById('navbarsExampleDefault')
-const bsCollapse = new bootstrap.Collapse(menuToggle)
+const btnMenu = document.querySelector('.navbar-toggler')
 navLinks.forEach((l) => {
-    l.addEventListener('click', () => { bsCollapse.toggle() })
+    l.addEventListener('click', () => { menuToggle.classList.remove("show"); btnMenu.classList.add('collapsed'); })
 })
