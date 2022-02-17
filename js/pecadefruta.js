@@ -33,6 +33,18 @@ let swiper = new Swiper(".mySwiper", {
   }
 
 
+  let hambcollapsed = document.querySelector('.navbar-toggler')
+  hambclasses = document.querySelectorAll('.navbar-toggler')
+  hambcollapsed.addEventListener('click', colormenu)
+
+  function colormenu() {
+    console.log(hambclasses)
+    if (document.body.scrollTop <= 80 || document.documentElement.scrollTop <= 80) {
+      header.classList.add("navscroll")
+    }
+  }
+  
+
 
   //Função para fechar menu hamb ao clicar
 const navLinks = document.querySelectorAll('.nav-item')
