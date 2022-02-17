@@ -38,7 +38,7 @@ let swiper = new Swiper(".mySwiper", {
 
 
   function colormenu() {
-    if (document.body.scrollTop <= 80 || document.documentElement.scrollTop <= 80) {
+    if (document.body.scrollTop < 81 || document.documentElement.scrollTop < 81) {
       header.classList.add("navscroll")
     }
   }
