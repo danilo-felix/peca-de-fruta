@@ -511,6 +511,7 @@ address span {
 
 .formulario {
     position: absolute;
+    text-align: center;
     top: 0;
     left: 48.4%;
     width: 704px;
@@ -572,6 +573,18 @@ address span {
 
 label {
     display: inline;
+}
+
+.modal-confirma {
+    display: none;
+    margin: auto;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    width: 271px;
+    height: 271px;
+    top: 180px;
+    background-color: #fff;
 }
 
 /*---------------------------------------------------------------*/

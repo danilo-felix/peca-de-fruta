@@ -227,54 +227,54 @@
       <form class="formulario">
         <span class="close" onclick="fechaModal()">X</span>
 
-        <div class="formulario-group">
-            <input type="text" name="Empresa" class="formulario-control empresa" id="empresa" placeholder="Empresa" tabindex="1" required>
-        </div>
-
-        <div class="formulario-group">
-            <input type="text" name="Responsável" class="formulario-control" id="responsavel" placeholder="Responsável" tabindex="2" required>
-        </div>
-
-        <div class="formulario-group">
-            <input type="tel" name="Telefone" class="formulario-control" id="telefone" placeholder="999 999 999" tabindex="3" required>
-        </div>
-
-        <div class="formulario-group">
-            <input type="tel" name="celular" class="formulario-control" id="celular" placeholder="999 999 999" tabindex="4" required>
-        </div>
-
-        <div class="formulario-group">
-            <input type="text" name="E-mail" class="formulario-control" id="email" placeholder="nome@empresa.pt" tabindex="5" required>
-        </div>
-
-        <div class="formulario-group">
-            <select class="formulario-select formulario-control" id="quantos-cestos" tabindex="6">
-              <option selected>Escolha o cesto</option>
-              <option value="1" class="option-cesto">Cesto S (10 bananas; 8 maçãs; e 8 laranjas)</option>
-              <option value="2" class="option-cesto">Cesto M (30 bananas; 25 maçãs; 25 laranjas; e 10 pêras)</option>
-              <option value="3" class="option-cesto">Cesto L (70 bananas; 50 maçãs; 50 laranjas; e 25 pêras)</option>
-            </select>
-        </div>
-
-        <div class="formulario-group formulario-msg">
-            <input type="text" name="Mensagem" class="formulario-control mensagem" id="mensagem" placeholder="Mensagem (opcional)" tabindex="7" required>
-        </div>
-
-        <div class="formulario-check">
-            <input type="checkbox" class="condicoes" name="termos-e-condicoes" id="condicoes" required>
-            <label for="condicoes">Declaro que li e concordo com os Termos e Condições para a conclusão desta operação.</label>
-        </div>
-
-        <div class="formulario-check">
-            <input type="checkbox" class="condicoes" name="termos-e-condicoes" id="condicoes">
-            <label for="condicoes">Declaro que autorizo a utilização dos meus dados pessoais por parte da Peça de Fruta para fins comerciais e envio de informações de marketing.</label>
-        </div>
-
-        <div class="form-btn">
-            <input type="button" value="SUBSCREVER" class="modal-cta cta">
+        <div class="form-content">
+          <div class="formulario-group">
+              <input type="text" name="Empresa" class="formulario-control empresa" id="empresa" placeholder="Empresa" tabindex="1" required>
+          </div>
+          <div class="formulario-group">
+              <input type="text" name="Responsável" class="formulario-control" id="responsavel" placeholder="Responsável" tabindex="2" required>
+          </div>
+          <div class="formulario-group">
+              <input type="tel" name="Telefone" class="formulario-control" id="telefone" placeholder="999 999 999" tabindex="3" required>
+          </div>
+          <div class="formulario-group">
+              <input type="tel" name="celular" class="formulario-control" id="celular" placeholder="999 999 999" tabindex="4" required>
+          </div>
+          <div class="formulario-group">
+              <input type="text" name="E-mail" class="formulario-control" id="email" placeholder="nome@empresa.pt" tabindex="5" required>
+          </div>
+          <div class="formulario-group">
+              <select class="formulario-select formulario-control" id="quantos-cestos" tabindex="6">
+                <option selected>Escolha o cesto</option>
+                <option value="1" class="option-cesto">Cesto S (10 bananas; 8 maçãs; e 8 laranjas)</option>
+                <option value="2" class="option-cesto">Cesto M (30 bananas; 25 maçãs; 25 laranjas; e 10 pêras)</option>
+                <option value="3" class="option-cesto">Cesto L (70 bananas; 50 maçãs; 50 laranjas; e 25 pêras)</option>
+              </select>
+          </div>
+          <div class="formulario-group formulario-msg">
+              <input type="text" name="Mensagem" class="formulario-control mensagem" id="mensagem" placeholder="Mensagem (opcional)" tabindex="7" required>
+          </div>
+          <div class="formulario-check">
+              <input type="checkbox" class="condicoes" name="termos-e-condicoes" id="condicoes" required>
+              <label for="condicoes">Declaro que li e concordo com os Termos e Condições para a conclusão desta operação.</label>
+          </div>
+          <div class="formulario-check">
+              <input type="checkbox" class="condicoes" name="termos-e-condicoes" id="condicoes">
+              <label for="condicoes">Declaro que autorizo a utilização dos meus dados pessoais por parte da Peça de Fruta para fins comerciais e envio de informações de marketing.</label>
+          </div>
+          <div class="form-btn">
+              <input type="button" value="SUBSCREVER" class="modal-cta cta">
+          </div>
         </div>
       
+        <div class="modal-confirma align-itens-center">
+          <p>Sua compra foi concluída com sucesso</p>
+          <p>Estamos a processar o vosso pedido. Entraremos em contacto para acertar detalhes da entrega.</p>
+          <a href="">Site da Peça de Fruta</a>
+        </div>
+
       </form>
+
     </div>
 
     </main>

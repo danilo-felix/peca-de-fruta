@@ -50,7 +50,10 @@ navLinks.forEach((l) => {
     btQueroComprar = document.querySelectorAll('.cta1');
     modal = document.querySelector('.modal-class');
     btCesto = document.querySelectorAll('.cta-cesto');
-    console.log(btCesto)
+    btSubscrever = document.querySelector('.modal-cta');
+    confirma = document.querySelector('.modal-confirma')
+    formContent = document.querySelector('.form-content')
+
 
     //eventos
     for (let i=0; i<btQueroComprar.length;i++) {
@@ -60,24 +63,28 @@ navLinks.forEach((l) => {
     for (let i=0; i<btCesto.length;i++) {
       btCesto[i].addEventListener('click', abreModalSelect);
     }
+
+    btSubscrever.addEventListener('click', abreModalSubscrever)
     
   }
 
   function abreModal() {
     modal.style.display = 'flex';
-    let modalDentro = modal.querySelector('.form');
   }
 
   function abreModalSelect() {
     modal.style.display = 'flex';
-    let modalDentro = modal.querySelector('.form');
   }
 
   function fechaModal() {
     modal.style.display = 'none';
+    formContent.style.display = 'block'
+    confirma.style.display ='none';
+  }
 
-    let modalDentro = modal.querySelector('.form');
-    //modalDentro.classList.remove("active");
+  function abreModalSubscrever() {
+    confirma.style.display = 'flex'
+    formContent.style.display = 'none'
   }
 
   window.onclick = function(event) {
