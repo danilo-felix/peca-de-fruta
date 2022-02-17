@@ -520,7 +520,7 @@ address span {
 }
 
 .formulario-group {
-    text-align: center !important;
+    text-align: center;
     margin-bottom: 30px;
     font-size: 1.3rem;
 }
@@ -536,20 +536,11 @@ address span {
 
 .formulario-select {
     width: 450px;
-    height: 32px;
+    min-height: 32px;
 }
 
 .empresa {
     margin-top: 80px;
-}
-
-.formtel-box {
-    margin-inline: auto;
-    width: 450px;
-}
-
-.formulario-tel {
-    width: 210px;
 }
 
 .mensagem {
@@ -563,7 +554,6 @@ address span {
     width: 160px;
     height: 45px;
     background-color: #ac291d;
-    color: white;
 }
 
 .formulario-check {
@@ -634,6 +624,12 @@ label {
     .footer .row .col-4{
         margin: auto;
     }
+
+    .formulario-control,
+    .formulario-select,
+    .formulario-check {
+        width: 300px;
+    }
 }
 
 @media (max-width:616px) {
@@ -650,6 +646,14 @@ label {
     }
 
 }
+
+
+@media (max-width:841px) {
+    .card:last-child {
+        margin-top: 60px;
+    }
+}
+
 
 @media (max-width:916px) {
     .card-quem-somos:last-child {
@@ -685,13 +689,6 @@ label {
 }
 
 
-@media (max-width:841px) {
-    .card:last-child {
-        margin-top: 60px;
-    }
-}
-
-
 @media (max-width:1031px) {
     .cta-final {
         margin: auto;
@@ -711,5 +708,13 @@ label {
     .cesto-fim {
         margin: auto;
         margin-top: 60px;
+    }
+}
+
+@media (max-width:1280px) {
+    .formulario {
+        position: relative;
+        margin: auto !important;
+        left: auto;
     }
 }
